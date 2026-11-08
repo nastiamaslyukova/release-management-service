@@ -69,3 +69,4 @@ def delete_release(release_id: int):
             releases_db.pop(index)
             return {"detail": "Релиз успешно удален"}
     raise HTTPException(status_code=404, detail="Релиз не найден")
+# проверка pull request
