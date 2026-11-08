@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  release-service:
+    build: .
+    container_name: release_service_container
+    ports:
+      - "8000:8000"
+    restart: always
